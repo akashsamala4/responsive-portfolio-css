@@ -1,0 +1,86 @@
+/* ============================= */
+/* MAIN GRID LAYOUT */
+/* ============================= */
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "hero"
+    "projects"
+    "about"
+    "contact"
+    "footer";
+}
+
+/* Assign Grid Areas */
+
+.header {
+  grid-area: header;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.about {
+  grid-area: about;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+/* ============================= */
+/* PROJECTS GRID (CSS GRID) */
+/* ============================= */
+
+.portfolio-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+
+  margin-top: 2rem;
+}
+
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+  .hero {
+    padding: 4rem;
+  }
+
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+
+}
