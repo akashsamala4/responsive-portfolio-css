@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Akash | Advanced CSS Portfolio</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body class="layout">
+
+  <!-- ================= NAVBAR ================= -->
+
+  <header class="header">
+    <nav class="nav">
+      <h1 class="nav__logo">Akash.dev</h1>
+
+      <ul class="nav__menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section id="home" class="hero">
+    <h2 class="hero__title">Hi, I'm Akash 👋</h2>
+    <p class="hero__subtitle">
+      Computer Science & AI Student | Web Developer
+    </p>
+    <button class="btn">View Projects</button>
+  </section>
+
+  <!-- ================= PROJECTS GRID ================= -->
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="portfolio-grid">
+
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Description of project.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Description of project.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>Description of project.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate Computer Science student exploring web development,
+      AI and modern UI design.
+    </p>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <form class="contact__form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer class="footer">
+    <p>© 2026 Akash. All rights reserved.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/theme-switcher.js"></script>
+
+</body>
+</html>
